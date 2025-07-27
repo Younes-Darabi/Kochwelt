@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/css/rezept.css" />
+  <script src="/script.js" defer></script>
 
   <title>Dessert Rezept</title>
 </head>
@@ -61,37 +62,38 @@
       <div class="Zutaten">
         <label>Zutaten für </label>
         <div class="button-input">
-          <input class="text-box" type="number" value="1" />
-          <button class="portionen">Portionen</button>
+          <input id="text-box" class="text-box" type="number" min="1" value="1" />
+          <button id="Calculator" onclick="Calculator()" class="portionen">Portionen</button>
         </div>
       </div>
 
       <table>
         <tr>
-          <td>60g Mascarpone</td>
+          <td id="td1">60g Mascarpone</td>
         </tr>
         <tr>
-          <td class="td-white">1 frische Eier</td>
+          <td id="td2" class="td-white">1 frische Ei</td>
         </tr>
         <tr>
-          <td>25g Zucker</td>
+          <td id="td3">25g Zucker</td>
         </tr>
         <tr>
-          <td class="td-white">50g Löffelbiskuits (Savoiardi)</td>
+          <td id="td4" class="td-white">50g Löffelbiskuits (Savoiardi)</td>
         </tr>
         <tr>
-          <td>50 ml starker Espresso (abgekühlt)</td>
+          <td id="td5">50 ml starker Espresso (abgekühlt)</td>
         </tr>
         <tr>
-          <td class="td-white">1 EL Amaretto oder Marsala (optional)</td>
+          <td id="td6" class="td-white">1 EL Amaretto oder Marsala (optional)</td>
         </tr>
         <tr>
-          <td>1/2 Päckchen Vanillezucker</td>
+          <td id="td7">1/2 Päckchen Vanillezucker</td>
         </tr>
         <tr>
           <td class="td-white">Kakaopulver zum Bestäuben</td>
         </tr>
       </table>
+
     </section>
 
     <section>

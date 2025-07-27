@@ -19,6 +19,7 @@ h2 {
 
 p {
     font-size: 20px;
+    text-align: justify;
 }
 
 /* ----------Header---------- */
@@ -169,6 +170,7 @@ article {
     width: 30%;
     border-radius: 10px;
     object-fit: cover;
+    margin-left: 30px;
 }
 
 .section-three div {
@@ -226,26 +228,42 @@ footer {
     filter: drop-shadow(0px 0px 5px #f7f5f3);
 }
 
-@media(max-width:800px){
+/* -------------Respansiv------------- */
+@media(max-width:1037px) {
+    p {
+        text-align: left;
+    }
+}
+
+@media(max-width:800px) {
+    .hidden {
+        display: none;
+    }
+
     h2 {
         font-size: 25px;
         margin-bottom: 32px;
     }
+
     p {
         font-size: 15px;
     }
+
     /* ------section-one------- */
     .section-one {
         flex-direction: column;
         margin-top: 50px;
         gap: 30px;
     }
+
     .section-one img {
         width: 100%;
     }
+
     .button-to-rezept {
         margin-top: 50px;
     }
+
     /* ------section-three------- */
     .section-three {
         gap: 0;
@@ -254,6 +272,7 @@ footer {
     .section-three div {
         flex-direction: column;
     }
+
     .section-three img {
         margin-top: 30px;
         width: 100%;
@@ -261,16 +280,25 @@ footer {
         border-radius: 10px;
         object-fit: cover;
     }
+
+    .section-three img {
+        margin-left: 0px;
+    }
 }
-@media(max-width:602px){
+
+/* ------------------------------------- */
+@media(max-width:602px) {
     h2 {
         font-size: 20px;
     }
+
     /* ------section-two------- */
-.section-two {
-    margin: 50px 0;}
-.quicklinks {
-    flex-direction: column;
-    gap: 20px;
-}
+    .section-two {
+        margin: 50px 0;
+    }
+
+    .quicklinks {
+        flex-direction: column;
+        gap: 20px;
+    }
 }

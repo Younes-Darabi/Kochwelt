@@ -4,55 +4,73 @@
     font-weight: 100 900;
     font-style: normal;
 }
+
 * {
     margin: 0;
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
     font-size: 16px;
 }
+
 h1 {
     font-size: 35px;
     margin-bottom: 20px;
 }
+
 h2 {
     font-size: 30px;
 }
+
+h3 {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
 h4 {
     font-weight: 400;
 }
+
 p {
     font-size: 20px;
+    text-align: justify;
 }
+
 /* ----------Header---------- */
 header {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 header section {
     display: flex;
     justify-content: space-between;
     width: 80%;
 }
+
 header img {
     height: 60px;
     margin: 20px 0;
 }
+
 nav {
     display: flex;
     align-items: flex-end;
 }
+
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
+
 nav a {
     text-decoration: none;
     color: #4e4e4e;
     font-weight: 600;
     padding-bottom: 8px;
 }
+
 nav a:hover {
     color: #008000;
     text-decoration: underline;
@@ -60,12 +78,14 @@ nav a:hover {
     text-underline-offset: 10px;
     text-decoration-thickness: 3px;
 }
+
 .line {
     display: flex;
     background-color: #efefef;
     height: 2px;
     box-shadow: 0 2px 3px #efefef;
 }
+
 /* ----------Main---------- */
 main {
     display: flex;
@@ -74,70 +94,76 @@ main {
     flex-direction: column;
     margin: 50px 0;
 }
+
 main section {
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 80%;
 }
+
 .img-rezepz {
     width: 100%;
     height: 180px;
     object-fit: cover;
     border-radius: 10px;
 }
+
 .part-top {
     display: flex;
-    align-items: center;
     gap: 20px;
+    margin: 20px 0;
+
 }
+
 .icon-img {
     width: 15px;
     height: 15px;
 }
+
 .time-date {
     background-color: #efefef;
     display: flex;
-    justify-content: center;
     align-items: center;
     padding: 7px 20px;
     border-radius: 10px;
     gap: 10px;
-    margin: 20px 0;
 }
-.line-main{
+
+.line-main {
     display: flex;
     background-color: #efefef;
     height: 2px;
     margin-top: 50px;
     margin-bottom: 10px;
 }
+
 .Zutaten {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 
-
-
-
-
-
-
 label {
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .text-box {
     font-family: "Raleway", sans-serif;
     font-size: 20px;
-    padding-left: 10px;
+    padding-left: 15px;
     border: 2px double #efefef;
     border-radius: 10px 0 0 10px;
-    width: 200px;
-    height: 43px;
+    width: 150px;
+    height: 45px;
     outline: none;
     margin-left: 20px;
     border-right: none;
+}
+
+.button-input {
+    display: flex;
+    align-items: center;
 }
 
 .portionen {
@@ -145,11 +171,10 @@ label {
     font-size: 25px;
     color: white;
     border-style: none;
-    padding: 10px 30px;
+    padding: 7px 30px;
     cursor: pointer;
+    border-radius: 0 10px 10px 0;
 }
-
-
 
 table {
     width: 100%;
@@ -157,7 +182,7 @@ table {
 
 td {
     width: 100%;
-    height: 60px;
+    height: 50px;
     border-radius: 12px;
     background: #efefef;
     padding-left: 50px;
@@ -182,7 +207,7 @@ td {
 }
 
 main span {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 300;
 }
 
@@ -241,4 +266,106 @@ footer {
 .legal-section a:focus {
     color: black;
     filter: drop-shadow(0px 0px 5px #f7f5f3);
+}
+
+/* ---------------respansiv---------------- */
+@media(max-width:800px) {
+    .hidden {
+        display: none;
+    }
+
+    .part-top {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .button-input {
+        /* display: flex;
+        align-items: center; */
+        flex: 1;
+    }
+
+    .text-box {
+        flex: 1;
+        width: 0;
+    }
+
+    .portionen {
+        flex: 1;
+    }
+
+    .zubereitung-zeit {
+        flex-direction: column;
+        margin-top: 15px;
+        gap: 5px;
+    }
+}
+
+/* ------------------------------------- */
+@media(max-width:600px) {
+    .Zutaten {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .button-input {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .text-box {
+        flex: 1;
+        margin-left: 0px;
+    }
+
+    .portionen {
+        flex: 1;
+        font-size: 16px;
+        padding: 13px 30px;
+    }
+
+    td {
+        padding-left: 10px;
+    }
+
+    .ersteller-img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    /* -------------font-------------- */
+    h1 {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        margin-top: 50px;
+        font-size: 17px;
+    }
+
+    h4 {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 16px;
+            text-align: left;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    main span {
+        font-size: 25px;
+    }
 }

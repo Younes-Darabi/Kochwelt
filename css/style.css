@@ -4,6 +4,43 @@
     font-weight: 100 900;
     font-style: normal;
 }
+/* ----------------------- */
+.btn_menu{
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+}
+.btn_menu:hover {
+    color: #008000;
+    scale: 1.1;
+}
+
+.resp_menu_box{
+    background-color: #008000;
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 140px;
+    padding: 10px;
+    border-radius: 5px;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.resp_menu_box a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+.resp_menu_box a:hover{
+    background-color: #3baf3b;
+    border-radius: 5px;
+}
+/* ---------------------------------- */
 
 * {
     margin: 0;

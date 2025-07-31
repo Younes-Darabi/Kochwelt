@@ -12,3 +12,7 @@ function Calculator() {
     document.getElementById('td6').innerHTML = sum  + " EL Amaretto oder Marsala (optional)";
     document.getElementById('td7').innerHTML = sum * 1/2 + " Päckchen Vanillezucker";
 }
+
+function menu() {
+    document.getElementById('res_menu').classList.toggle('hidden');
+}
